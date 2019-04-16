@@ -2,4 +2,50 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Philosopher-Regular';
+}
+
+.nav {
+  height: 80px;
+  background: #66C5B4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navigation {
+  font-size: 20px;
+}
+
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navigation ul li {
+  padding-left: 30px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
