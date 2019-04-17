@@ -1,51 +1,261 @@
+@font-face {
+  font-family: 'Philosopher-Regular';
+  src: url("../fonts/Philosopher-Regular.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Philosopher-Bold';
+  src: url("../fonts/Philosopher-Bold.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Philosopher-BoldItalic';
+  src: url("../fonts/Philosopher-BoldItalic.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Philosopher-Italic';
+  src: url("../fonts/Philosopher-Italic.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Risque-Regular';
+  src: url("../fonts/Risque-Regular.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+/*   ----Header----   */
+.header {
+  height: 80px;
+  background-color: #483D8B;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 18px;
+  color: #fff;
+}
+
+.wrapper .navigation ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .navigation ul li {
+  padding-left: 12px;
+}
+
+.wrapper .logo {
+  font-family: Risque-Regular;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper .logo:hover {
+  color: #808e97;
+}
+
+.wrapper .nav-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper .nav-link:hover {
+  color: #808e97;
+}
+
+/*   ----Slider----   */
+.title {
+  font-size: 60px;
+}
+
+.text {
+  font-size: 25px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+/*   ----Footer----   */
+.footer {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #483D8B;
+  padding: 50px 0 0 0;
+  color: #b3b3b3;
+  overflow: hidden;
+}
+
+.footer section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo {
+  color: white;
+  font-family: Risque-Regular;
+  font-size: 28px;
+}
+
+.logo:hover {
+  color: #808e97;
+  text-decoration: none;
+}
+
+footer section.bottom {
+  border-top: 1px solid #808080;
+  font-size: 12px;
+  font-family: Philosopher-Bold;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 30px 0 30px;
+  margin: 40px 0 0 0;
+  text-align: center;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+small {
+  font-size: 18px;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+.widjets ul {
+  list-style: none;
+}
+
+.info-link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  list-style: none;
+}
+
+.info-link:hover {
+  color: #808e97;
+  text-decoration: none;
+}
+
+.card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-body {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  -webkit-box-shadow: 2px 2px 2px #252525;
+          box-shadow: 2px 2px 2px #252525;
+}
+
+.card:hover {
+  -webkit-box-shadow: 5px 5px 10px #252525;
+          box-shadow: 5px 5px 10px #252525;
+}
+
+.btn-primary {
+  width: 200px;
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.btn-primary:hover {
+  background-color: #2d5db8;
+}
+
+.info-container .contact ul {
+  list-style: none;
+}
+
+.info-container {
+  padding: 10px;
+  margin: 10px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-html {
-  padding: 0;
-  margin: 0;
-}
-
 body {
-  font-family: 'Philosopher-Regular';
+  margin: 0;
+  padding: 0;
+  font-family: Philosopher-Regular;
+  background-color: #E6E6FA;
 }
 
-.nav {
-  height: 80px;
-  background: #66C5B4;
+/*   ----Content----   */
+.content {
+  height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.navigation {
-  font-size: 20px;
-}
-
-.navigation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-}
-
-.navigation ul li {
-  padding-left: 30px;
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
