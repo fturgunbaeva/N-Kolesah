@@ -1,52 +1,35 @@
-@import 'fonts'
+@import 'fonts' //Настройка шрифтов
+@import 'header'// Шапка сайта
+@import 'slider'// Slider
+@import 'footer'// Футер сайта
+@import 'card-box'// Контентная часть
+
+@import 'info'  // Инфо (контакты, о нас, правила пользования)  
+
 *
   box-sizing: border-box
 body
   margin: 0
   padding: 0 
   font-family: Philosopher-Regular
-  background-color:  rgba(102, 197, 180, 0.5)
+  background-color:  #E6E6FA
 
-/*   ----Header----   */ 
-.header 
-  height: 80px
-  background-color: #2f2f2f
-  overflow: hidden   
-
-.wrapper
+/*   ----Content----   */  
+.content 
+  height: 60rem
   display: flex
-  justify-content: space-between
-  padding-top: 18px
-  color: #fff
+  justify-content: center
+  align-items: center
   
-  .navigation ul 
-    list-style: none
-    display: flex
-
-  .navigation ul li 
-    padding-left: 12px
-
-  .logo 
-    font-family: Risque-Regular
-    font-size: 32px    
-    color: white
-    text-decoration: none
-  .logo:hover
-    color: rgb(128, 142, 151)  
-
-  .nav-link  
-    font-size: 18px
-    text-decoration: none
-    color: white
-  .nav-link:hover 
-    color: rgb(128, 142, 151) 
+  
+  
+  
 
 
-/*   ----Slider----   */   
-.title 
-  font-size: 60px
-.text
-  font-size: 25px  
+  
+
+
+
   
 
 
