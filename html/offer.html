@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NaKolesah</title>
-  <!-- подключение бутстрап --> 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- подключение анимации  --> 
-  <link rel="stylesheet" type="text/css" href="../wow-animation/animate.min.css">      
-  <!-- подключение основного стиля --> 
+  <!-- подключение бутстрап -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- подключение анимации  -->
+  <link rel="stylesheet" type="text/css" href="../wow-animation/animate.min.css">
+  <!-- подключение основного стиля -->
   <link rel="stylesheet" href="../css/style.css">
-  <!-- подключение иконок --> 
+  <!-- подключение иконок -->
   <link rel="stylesheet" href="../fontawsome/css/all.min.css">
 </head>
+
 <body>
   <div class="header">
     <div class="container">
@@ -23,8 +26,8 @@
         </div>
         <div class="navigation">
           <ul>
-            <li><a href="search.html" class="nav-link"><i class="fas fa-search"></i>  Найти поездку</a></li>
-            <li><a href="offer.html" class="nav-link"><i class="fas fa-plus"></i>  Предложить поездку</a></li>            
+            <li><a href="search.html" class="nav-link"><i class="fas fa-search"></i> Найти поездку</a></li>
+            <li><a href="offer.html" class="nav-link"><i class="fas fa-plus"></i> Предложить поездку</a></li>
           </ul>
         </div>
         <div class="navigation">
@@ -36,22 +39,56 @@
               <a href="#" class="nav-link">Регистрация</a>
             </li>
           </ul>
-        </div>    
+        </div>
 
       </div>
     </div>
   </div>
   <!-- /#header -->
 
-  
+
   <!-- /.slider -->
   <div class="content">
     <div class="container">
-      <h1>Предложить поездку</h1>
+      <div class="row">
+        <div class="col">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Место выезда и прибытия</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Откуда"><br>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Куда">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Дата и время выезда</label>
+              <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Дата">
+            </div>
 
+            <div class="form-group">
+              <label for="exampleInputPassword1">Стоимость поездки</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="в сомах">
+            </div>
 
+            <div class="form-group">
+              <label for="exampleInputPassword1">Количество мест</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Номер телефона</label>
+              <input type="tel" class="form-control" id="exampleInputPassword1"
+                placeholder="+996 XXX XX - XX - XX - XX">
+            </div>
+            <button type="submit" class="btn btn-primary">Предложить</button>
+          </form>
+        </div>
 
-
+        <div class="col">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5847.764742755697!2d74.59790330919786!3d42.87532685087665!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dd3b8b9c43%3A0x6b92d0f640fd9555!2z0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3Ri9C5INC40YHRgtC-0YDQuNGH0LXRgdC60LjQuSDQvNGD0LfQtdC5!5e0!3m2!1sru!2skg!4v1555431303351!5m2!1sru!2skg"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
     <!-- /.container -->
   </div>
@@ -61,27 +98,24 @@
     <div class="container">
       <section class="top">
         <div class="info">
-            <a href="../index.html" class="logo"> <i class="fas fa-car-side"></i>N@Kolesah</a>
+          <a href="../index.html" class="logo"> <i class="fas fa-car-side"></i>N@Kolesah</a>
           <small>Вызывай машину одной кнопкой! Подвози других и зарабатывай!</small>
         </div>
         <div class="widjets">
           <ul>
             <li><a href="info.html" class="info-link">Контакты</a></li>
             <li><a href="info.html" class="info-link">О нас</a> </li>
-            <li><a href="info.html" class="info-link">Правила пользование</a></li>            
+            <li><a href="info.html" class="info-link">Правила пользование</a></li>
           </ul>
         </div>
-        
-    </section>
-    <section class="bottom">
-      <P class="text">Copyright 2019</P>
-    </section>
+
+      </section>
+      <section class="bottom">
+        <P class="text">Copyright 2019</P>
+      </section>
     </div>
   </footer>
   <!-- /.footer -->
-  
-  
-  
 
 
 
@@ -92,17 +126,27 @@
 
 
 
-  <!-- подключение wow.js --> 
+
+
+
+  <!-- подключение wow.js -->
   <script src="../wow-animation/wow.min.js"></script>
   <script>
-    new WOW( ).init( );
-  </script> 
-  <!-- подключение bootstrap --> 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <!-- подключение основного скрипта --> 
+    new WOW().init();
+  </script>
+  <!-- подключение bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- подключение основного скрипта -->
   <script src="../script/script.js"></script>
-  
+
 </body>
+
 </html>
