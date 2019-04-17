@@ -207,6 +207,7 @@ small {
 .card {
   -webkit-box-shadow: 2px 2px 2px #252525;
           box-shadow: 2px 2px 2px #252525;
+  border: 3px solid #6610f2;
 }
 
 .card:hover {
@@ -217,11 +218,76 @@ small {
 .btn-primary {
   width: 200px;
   color: #fff;
-  background-color: #dc3545;
+  background-color: #6610f2;
 }
 
 .btn-primary:hover {
-  background-color: #2d5db8;
+  -webkit-box-shadow: 5px 5px 10px #252525;
+          box-shadow: 5px 5px 10px #252525;
+  background-color: #6610f2;
+}
+
+.search-box {
+  height: 50rem;
+  background-color: #483D8B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  padding: 3rem;
+}
+
+.input-box {
+  -webkit-box-shadow: 5px 5px 10px #252525;
+          box-shadow: 5px 5px 10px #252525;
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type=text] {
+  width: 50%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.datetime {
+  width: 50%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.button {
+  margin: 1rem 0;
+  width: 50%;
+  background-color: #E6E6FA;
+  color: #483D8B;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button:hover {
+  color: #6610f2;
+  -webkit-box-shadow: 5px 5px 10px #252525;
+          box-shadow: 5px 5px 10px #252525;
 }
 
 .info-container .contact ul {
@@ -257,5 +323,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.car-animation {
+  height: 50px;
+  background-color: #483D8B;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
