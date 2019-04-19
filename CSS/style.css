@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Philosopher-Regular';
+  src: url("../fonts/Philosopher-Regular.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Philosopher-Bold';
+  src: url("../fonts/Philosopher-Bold.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Philosopher-BoldItalic';
+  src: url("../fonts/Philosopher-BoldItalic.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Philosopher-Italic';
+  src: url("../fonts/Philosopher-Italic.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Risque-Regular';
+  src: url("../fonts/Risque-Regular.ttf");
+  font-size: normal;
+  font-weight: normal;
+}
+
+nav {
+  color: #fff;
+  height: 80px;
+}
+
+.kolesa {
+  font-family: Risque-Regular;
+  font-size: 28px;
+}
+
+.kolesa:hover {
+  color: #808e97;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  font-size: 18px;
+  font-family: Philosopher-Regular;
+}
+
+.navbar-nav:hover {
+  color: #808e97;
+  cursor: pointer;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Philosopher-Regular;
+}
+
+.fluid {
+  height: 60rem;
+  background-color: #E6E6FA;
+}
+
+.route {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

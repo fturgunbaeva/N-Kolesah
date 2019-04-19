@@ -5,38 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Registration</title>
-  <link rel="stylesheet" href="CSS/style1.css">
-  <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
-  <script src="./storage.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>N@Kolesah</title>
+  <!-- подключение основного стиля --> 
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- подключение анимации  --> 
+  <link rel="stylesheet" type="text/css" href="./wow-animation/animate.min.css"> 
+  <!-- подключение иконок --> 
+  <link rel="stylesheet" href="./fontawsome/css/all.min.css">
+ 
+  <!-- подключение бутстрап --> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background:#66C5B4">
-      <router-link class="kolesa" style="text-decoration:none" id="main" onclick="changeRoute('mainPage')">
-        N@Kolesah.kg</router-link>
-      <button style="margin-left: 75%" class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav" style="margin-left: 50%">
-          <a class="nav-item nav-link" style="color:white" id="find" onclick="changeRoute('findCar')">Найти
-            поездку</a>
-          <a class="nav-item nav-link" style="color:white" id="offer" onclick="changeRoute('offerCar')">Предложить
-            поездку</a>
-          <a class="nav-item nav-link" style="color:white" id="sign"
-            onclick="changeRoute('registration')">Регистрация</a>
-          <a class="nav-item nav-link" style="color:white" id="enter" onclick="changeRoute('loginForm')">Войти</a>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background:  #483D8B">
+      <div class="container">
+        <router-link class="kolesa" style="text-decoration:none" id="main" onclick="changeRoute('mainPage')">N@Kolesah.kg</router-link>
+        <button style="margin-left: 75%" class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" style="margin-left: 40%">
+            <a class="nav-item nav-link" style="color: #fff" id="find" onclick="changeRoute('findCar')">Найти поездку</a>
+            <a class="nav-item nav-link" style="color: #fff" id="offer" onclick="changeRoute('offerCar')">Предложить поездку</a>
+            <a class="nav-item nav-link" style="color: #fff" id="sign" onclick="changeRoute('registration')">Регистрация</a>
+            <a class="nav-item nav-link" style="color: #fff" id="enter" onclick="changeRoute('loginForm')">Войти</a>
+          </div>
         </div>
       </div>
+      <!-- /.container -->
     </nav>
-    <div class="fluid route active" id="mainPage" style="background: rgba(102, 197, 180, 0.5)">
+    <!-- /nav -->
+
+
+
+
+
+    <div class="fluid route active" id="mainPage" >
       <div class="slider">
         <div class="bd-example">
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -107,8 +116,16 @@
         <!-- /.container -->
       </div>
     </div>
+
+
+
+
+
+
+
+
     <!-- форма поиска поездок -->
-    <div class="fluid route" id="findCar" style="background: rgba(102, 197, 180, 0.5)">
+    <div class="fluid route" id="findCar" >
       <div class="content">
         <div class="container">
           <div class="search-box">
@@ -157,7 +174,7 @@
       </div>
     </div>
     <!-- end форма поиска поездок -->
-    <div class="fluid route" id="offerCar" style="background: rgba(102, 197, 180, 0.5)">
+    <div class="fluid route" id="offerCar" >
       <div class="content">
         <div class="container">
           <div class="row">
@@ -200,7 +217,7 @@
       </div>
     </div>
 
-    <div class="fluid route" id="registration" style="background: rgba(102, 197, 180, 0.5)">
+    <div class="fluid route" id="registration" >
       <form class="container align-items-center" id="validForm">
         <h2 class="toregistr" style="margin-left: 20px">Зарегистрироваться</h2>
         <div class="form-group col-6">
@@ -228,11 +245,11 @@
         </div>
       </form>
     </div>
-    <div class="fluid route" id="cabinet" style="background: rgba(102, 197, 180, 0.5)">
+    <div class="fluid route" id="cabinet" >
       <h2 class="toregistr" style="margin-left: 20px">Личный кабинет</h2>
 
     </div>
-    <div class="fluid route" id="loginForm" style="background: rgba(102, 197, 180, 0.5)">
+    <div class="fluid route" id="loginForm" >
       <form class="container align-items-center" id="userForm">
         <h2 class="toregistr" style="margin-left: 20px  ">Доступ к личному кабинету</h2>
         <div class="form-group col-6">
@@ -251,8 +268,12 @@
       </form>
     </div>
   </div>
+  <!-- /#app -->
+
+
+
   <script src="registr.js"></script>
-  <script src="./tests.js"></script>
+  <script src="tests.js"></script>
 </body>
 
 </html>
