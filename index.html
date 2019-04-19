@@ -12,8 +12,7 @@
   <link rel="stylesheet" type="text/css" href="./wow-animation/animate.min.css"> 
   <!-- подключение иконок --> 
   <link rel="stylesheet" href="./fontawsome/css/all.min.css">
- 
-  <!-- подключение бутстрап --> 
+   <!-- подключение бутстрап --> 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
@@ -22,8 +21,8 @@
   <div id="app">
     <nav class="navbar navbar-expand-lg navbar-light" style="background:  #483D8B">
       <div class="container">
-        <router-link class="kolesa" style="text-decoration:none" id="main" onclick="changeRoute('mainPage')">N@Kolesah.kg</router-link>
-        <button style="margin-left: 75%" class="navbar-toggler" type="button" data-toggle="collapse"
+        <router-link class="kolesa" style="text-decoration:none" id="main" onclick="changeRoute('mainPage')"> <i class="fas fa-car-side"></i> N@Kolesah.kg</router-link>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,11 +39,6 @@
       <!-- /.container -->
     </nav>
     <!-- /nav -->
-
-
-
-
-
     <div class="fluid route active" id="mainPage" >
       <div class="slider">
         <div class="bd-example">
@@ -56,7 +50,7 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/3.jpg" class="d-block w-100" alt="...">
+                <img src="img/7.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h1 class="title">Лучше чем такси</h1>
                   <p class="text">Вызывай машину одной кнопкой! Подвози других и зарабатывай!</p>
@@ -70,7 +64,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/7.jpeg" class="d-block w-100" alt="...">
+                <img src="img/3.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h1 class="title">Лучше чем такси</h1>
                   <p class="text">Вызывай машину одной кнопкой! Подвози других и зарабатывай!</p>
@@ -89,50 +83,67 @@
         </div>
       </div>
       <!-- /.slider -->
-
       <div class="content">
         <div class="container">
           <div class="card-box">
             <div class="wow fadeInLeftBig">
-              <div class="card" style="width: 34rem; ">
-                <img src="img/01.jpg" class="card-img-top" alt="..." style="height: 27rem">
-                <div class="card-body">
-                  <a href="html/search.html" class="btn btn-primary">Найти поездку</a>
+                <div class="card" style="width: 32rem; ">
+                  <img src="img/1.png" class="card-img-top" alt="..." style="height: 30rem" >
+                  <div class="card-body">           
+                    <a onclick="changeRoute('findCar')" class="btn-card" style="color: #fff">Найти поездку</a>
+                  </div>
                 </div>
-              </div>
             </div>
             <div class="wow fadeInRightBig">
-              <div class="card" style="width: 32rem;">
-                <img src="img/5.jpg" class="card-img-top" alt="..." style="height: 27rem">
-                <div class="card-body">
-                  <a href="html/offer.html" class="btn btn-primary">Предложить поездку</a>
+                <div class="card" style="width: 30rem;">
+                  <img src="img/2.png" class="card-img-top" alt="..." style="height: 30rem">
+                  <div class="card-body">        
+                    <a onclick="changeRoute('offerCar')" class="btn-card" style="color: #fff">Предложить поездку</a>
+                  </div>
                 </div>
-              </div>
             </div>
-
+    
           </div>
-          <!-- /.card-box -->
+          <!-- /.card-box -->         
         </div>
         <!-- /.container -->
-      </div>
+      </div> 
+      <!-- /.content -->      
     </div>
 
-
-
-
-
-
-
+    <footer class="footer" class="fluid route active">
+      <div class="container">
+        <section class="top">
+          <div class="info">
+            <router-link class="kolesa" style="text-decoration:none" id="main" onclick="changeRoute('mainPage')"><i class="fas fa-car-side"></i>N@Kolesah.kg</router-link>
+            <small>Вызывай машину одной кнопкой! Подвози других и зарабатывай!</small>
+          </div>
+          <div class="widjets">
+            <ul>
+              <li><a href="html/info.html" class="info-link">Контакты</a></li>
+              <li><a href="html/info.html" class="info-link">О нас</a> </li>
+              <li><a href="html/info.html" class="info-link">Правила пользование</a></li>            
+            </ul>
+          </div>
+          
+        </section>
+        <section class="bottom">
+          <P class="text">Copyright 2019</P>
+        </section>
+      </div>
+   </footer>
+   
+    <!-- /footer -->
+  
+    
+      
 
     <!-- форма поиска поездок -->
     <div class="fluid route" id="findCar" >
       <div class="content">
         <div class="container">
           <div class="search-box">
-            <h4><i class="fas fa-car-side"></i> Найти поездку</h4>
-
-            <div class="row">
-              <div class="col">
+            <h4><i class="fas fa-car-side"></i> Найти поездку</h4>        
                 <div class="input-box">
                   <small>Места выезда и прибытия</small>
                   <br>
@@ -145,11 +156,10 @@
                   <input type="datetime-local" name="" id="date-picker" class="datetime">
                   <br><br>
                   <button type="submit" id="findRouteButton" class="button">Поиск</button>
-                </div>
-              </div>
-              <div class="col">
+                </div>              
+              <div class="results" class=""></div>
                 <div style="position: relative; margin-top: 20%; border: 1px solid;" id="results-container">
-                  <h1>REsults</h1>
+                  <h1>Результаты</h1>
                   <div id="from-to">
 
                   </div>
@@ -160,18 +170,16 @@
 
                   </div>
                 </div>
-              </div>
-            </div>
-
-
-
-
-
           </div>
-
-        </div>
+         </div>
+        </div>        
         <!-- /.container -->
       </div>
+      <!-- /.content -->
+
+
+
+
     </div>
     <!-- end форма поиска поездок -->
     <div class="fluid route" id="offerCar" >
@@ -218,62 +226,83 @@
     </div>
 
     <div class="fluid route" id="registration" >
-      <form class="container align-items-center" id="validForm">
-        <h2 class="toregistr" style="margin-left: 20px">Зарегистрироваться</h2>
-        <div class="form-group col-6">
-          <label for="user_name">Имя пользователя</label>
-          <br>
-          <input type="text" required minlength="3" class="form-control" id="login" placeholder="Введите ваше логин" />
-        </div>
-        <div class="form-group col-6">
-          <label for="phone">Контактные данные: </label>
-          <br>
-          <input type="tel" placeholder="(0XXX)XX-XX-XX" required minlength="9" class="form-control" id="phone" />
-        </div>
-        <div class="form-group col-6">
-          <label for="phone">Ключь от вашего кабинета: </label>
-          <br>
-          <input type="password" class="form-control" minlength="6" id="password"
-            placeholder="Ваш пароль (не менее 6 знаков)" />
-          <br>
-          <input type="password" class="form-control" minlength="6" id="passConfirm"
-            placeholder="Подтвердите свой пароль" />
-          <br>
-        </div>
-        <div class="form-group col-6">
-          <button type="submit" class="btn btn-danger">Готово </button>
-        </div>
-      </form>
+     <div class="content">
+       <div class="container">
+          <form class="container align-items-center" id="validForm">
+            <h2 class="toregistr" style="margin-left: 20px">Зарегистрироваться</h2>
+            <div class="form-group col-6">
+              <label for="user_name">Имя пользователя</label>
+              <br>
+              <input type="text" required minlength="3" class="form-control" id="login" placeholder="Введите ваше логин" />
+            </div>
+            <div class="form-group col-6">
+              <label for="phone">Контактные данные: </label>
+              <br>
+              <input type="tel" placeholder="(0XXX)XX-XX-XX" required minlength="9" class="form-control" id="phone" />
+            </div>
+            <div class="form-group col-6">
+              <label for="phone">Ключь от вашего кабинета: </label>
+              <br>
+              <input type="password" class="form-control" minlength="6" id="password"
+                placeholder="Ваш пароль (не менее 6 знаков)" />
+              <br>
+              <input type="password" class="form-control" minlength="6" id="passConfirm"
+                placeholder="Подтвердите свой пароль" />
+              <br>
+            </div>
+            <div class="form-group col-6">
+              <button type="submit" class="btn btn-danger" style="background-color: #483D8B">Готово </button>
+            </div>
+          </form>
+       </div>
+       <!-- /.container -->
+     </div>
+     <!-- /.content -->
     </div>
     <div class="fluid route" id="cabinet" >
       <h2 class="toregistr" style="margin-left: 20px">Личный кабинет</h2>
-
     </div>
     <div class="fluid route" id="loginForm" >
-      <form class="container align-items-center" id="userForm">
-        <h2 class="toregistr" style="margin-left: 20px  ">Доступ к личному кабинету</h2>
-        <div class="form-group col-6">
-          <label for="user_name">Имя пользователя</label>
-          <br>
-          <input type="text" required minlength="3" class="form-control" id="log" placeholder="Введите ваш логин" />
+      <div class="content">
+        <div class="container">
+            <form class="container" id="userForm">
+              <h2 class="toregistr" style="margin-left: 20px  ">Доступ к личному кабинету</h2>
+              <div class="form-group col-6">
+                <label for="user_name">Имя пользователя</label>
+                <br>
+                <input type="text" required minlength="3" class="form-control" id="log" placeholder="Введите ваш логин" />
+              </div>
+              <div class="form-group col-6">
+                <label for="phone">Введите пароль: </label>
+                <br>
+                <input type="password" class="form-control" minlength="6" id="pass" placeholder="Ваш пароль" />
+              </div>
+              <div class="form-group col-6">
+                <input type="button" id="button" onclick="Enter()" class="form-control btn btn-danger" style="background-color: #483D8B" value="Войти" />
+                <div>
+            </form>
         </div>
-        <div class="form-group col-6">
-          <label for="phone">Введите пароль: </label>
-          <br>
-          <input type="password" class="form-control" minlength="6" id="pass" placeholder="Ваш пароль" />
-        </div>
-        <div class="form-group col-6">
-          <input type="button" id="button" onclick="Enter()" class="form-control btn btn-danger" value="Войти" />
-          <div>
-      </form>
-    </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.content -->
+    </div>  
+    
+    
+
+  
+  <!-- /.footer -->
   </div>
   <!-- /#app -->
+  
 
-
-
+  <!-- подключение бутстрап --> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- подключение анимации  --> 
+  <script src="./wow-animation/wow.min.js"></script>
   <script src="registr.js"></script>
-  <script src="tests.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
