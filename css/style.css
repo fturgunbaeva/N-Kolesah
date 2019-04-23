@@ -36,12 +36,15 @@
 /*   ----navbar----   */
 header {
   position: fixed;
+  position: absolute;
   width: 100%;
 }
 
 nav {
   height: 70px;
   background-color: #17a2b8;
+  -webkit-box-shadow: 0 0 20px 4px;
+          box-shadow: 0 0 20px 4px;
 }
 
 .navbar-light .navbar-brand {
@@ -109,8 +112,8 @@ nav .nav-item:hover::after {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.card-text {
-  height: 80%;
+.card-text1 {
+  height: 70%;
   width: 50%;
   color: #2F4F4F;
 }
@@ -269,6 +272,40 @@ nav .nav-item:hover::after {
   font-size: 22px;
   text-align: center;
   color: #191970;
+}
+
+.content-6 {
+  padding: 120px;
+  color: #2F4F4F;
+}
+
+.card h4 {
+  color: #28a745;
+}
+
+.card {
+  overflow: hidden;
+  float: left;
+  margin: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.myBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.myBox-card {
+  margin-left: 80px;
 }
 
 /*   ----Footer----   */
