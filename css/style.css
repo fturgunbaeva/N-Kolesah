@@ -308,6 +308,61 @@ nav .nav-item:hover::after {
   margin-left: 80px;
 }
 
+.content-7 {
+  padding: 120px;
+  color: #2F4F4F;
+}
+
+.form-control {
+  margin: 15px;
+}
+
+.content-7 h2 {
+  text-align: center;
+}
+
+.content-8 {
+  padding: 150px;
+  color: #2F4F4F;
+}
+
+.content-9 {
+  padding: 150px;
+  color: #2F4F4F;
+}
+
+.signup-form {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.content-9 h2 {
+  text-align: center;
+}
+
+.content-10 {
+  padding: 150px;
+  color: #2F4F4F;
+}
+
+.content-10 h2 {
+  text-align: center;
+}
+
+.formMybox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.content-11 {
+  padding: 150px;
+  color: #2F4F4F;
+}
+
 /*   ----Footer----   */
 .footer {
   height: 300px;
