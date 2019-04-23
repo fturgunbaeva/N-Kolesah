@@ -33,7 +33,6 @@
   font-weight: normal;
 }
 
-<<<<<<< HEAD:css/style.css
 /*   ----navbar----   */
 header {
   position: fixed;
@@ -179,119 +178,6 @@ nav .nav-item:hover::after {
 
 .content-2 {
   padding-bottom: 50px;
-=======
-nav {
-  color: #fff;
-  height: 80px;
-}
-
-.kolesa {
-  font-family: Risque-Regular;
-  font-size: 28px;
-}
-
-.kolesa:hover {
-  color: #808e97;
-  cursor: pointer;
-}
-
-.navbar-nav {
-  font-size: 18px;
-  font-family: Philosopher-Regular;
-}
-
-.navbar-nav:hover {
-  cursor: pointer;
-  color: green;
-}
-
-/*   ----Slider----   */
-.title {
-  font-size: 60px;
-  text-transform: uppercase;
-  font-family: Philosopher-Regular;
-}
-
-.text {
-  font-size: 25px;
-  font-family: Philosopher-Regular;
-}
-
-/*   ----Content----   */
-.content {
-  height: 50rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #E6E6FA;
-  font-family: Philosopher-Regular;
-}
-
-.card-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.card-body {
-  padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.card {
-  -webkit-box-shadow: 2px 2px 2px #252525;
-          box-shadow: 2px 2px 2px #252525;
-  border: 3px solid #6610f2;
-}
-
-.card:hover {
-  -webkit-box-shadow: 5px 5px 10px #252525;
-          box-shadow: 5px 5px 10px #252525;
-}
-
-.btn-card {
-  background-color: #483D8B;
-  border-color: #007bff;
-  width: 12rem;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 8px;
-  color: white;
-}
-
-.btn-card:hover {
-  -webkit-box-shadow: 5px 5px 10px #252525;
-          box-shadow: 5px 5px 10px #252525;
->>>>>>> e3ab08888af6db95163ebf93ba6a35370996756d:CSS/style.css
 }
 
 .content-3 {
@@ -375,17 +261,8 @@ nav {
   list-style: none;
 }
 
-<<<<<<< HEAD:css/style.css
 .security {
   margin-top: 40px;
-=======
-.info-link {
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-  list-style: none;
-  font-family: Philosopher-Regular;
->>>>>>> e3ab08888af6db95163ebf93ba6a35370996756d:CSS/style.css
 }
 
 .phrase {
@@ -397,7 +274,6 @@ nav {
   color: #191970;
 }
 
-<<<<<<< HEAD:css/style.css
 .content-6 {
   padding: 120px;
   color: #2F4F4F;
@@ -578,8 +454,6 @@ small {
   display: flex;
 }
 
-=======
->>>>>>> e3ab08888af6db95163ebf93ba6a35370996756d:CSS/style.css
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -594,7 +468,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: Philosopher-Regular;
-<<<<<<< HEAD:css/style.css
   background-color: #F8F8FF;
   height: 100%;
   overflow-y: scroll;
@@ -604,25 +477,5 @@ body {
 img {
   max-width: 100%;
   height: auto;
-=======
-}
-
-.content {
-  height: 50rem;
-  background-color: #E6E6FA;
-  padding: 20px;
-}
-
-.fluid {
-  background-color: #E6E6FA;
-}
-
-.route {
-  display: none;
-}
-
-.active {
-  display: block;
->>>>>>> e3ab08888af6db95163ebf93ba6a35370996756d:CSS/style.css
 }
 /*# sourceMappingURL=style.css.map */
