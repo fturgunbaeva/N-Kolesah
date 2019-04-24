@@ -343,11 +343,30 @@ nav .nav-item:hover::after {
 
 .content-10 {
   padding: 150px;
-  color: #2F4F4F;
+  color: white;
 }
 
-.content-10 h2 {
+.myform-box {
+  background-color: #17a2b8;
+  -webkit-box-shadow: 0 0 20px 4px;
+          box-shadow: 0 0 20px 4px;
+  width: 500px;
+  margin: 20px auto;
+  padding: 80px 40px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.content-10 h3 {
   text-align: center;
+}
+
+.content-10 h3:before, .content-10 h3:after {
+  content: '';
+  display: inline-block;
+  width: 5vh;
+  vertical-align: middle;
+  border-bottom: 1px solid;
 }
 
 .formMybox {
