@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NaKolesah</title>
+  <link rel="icon" href="./img/logo.png">
   <!-- подключение бутстрап --> 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- подключение анимации  --> 
@@ -41,17 +42,34 @@
   <section class="content-11">
     <div class="container">
       <h2>Профиль</h2>
-      <div class="jumbotron1">
-        <h5>nakolesah@gmail.com</h5>
-        <hr class="my-4">
-        <h4>Fatima Turgunbaeva</h4>
-        <p>23 Апреля 2019</p>
-        <p>0778 555 555</p>
-        <button class="btn  ml-5" type="submit" style="background: #28a745">Обновить</button>
-        <button class="btn btn-danger ml-5" type="submit" style="background: #dc3545">Удалить</button>
+      <div class="avaContainer">
+        <div class="avatar-flip" style="box-shadow: 2px 2px 15px #17a2b8" >
+            <img src="./img/avatar.jpg" >
+            <img src="./img/car.jpg" >
+        </div>
+        <h4>nakolesah@gmail.com</h4>
+        <h3 class="name">Актан</h3>
+        <h3 class="name">Талатбекович</h3>
+        <h6 class="phoneNum">Тел: 0555179068</h6>
+        <h6 class="birthDay">19 сентября 1991 г.</h6>
+        <div class="social-icon">
+          <!--Facebook-->
+          <a class="fb-ic mr-3" href="https://www.facebook.com/pmaatkurbanova" role="button"><i class="fab fa-lg fa-facebook-f"></i></a>
+          <!--Twitter-->
+          <a class="tw-ic mr-3" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a>
+          <!--Instagram-->
+          <a class="ins-ic mr-3" href="https://www.instagram.com/perismeris/?hl=ru" role="button"><i class="fab fa-lg fa-instagram"></i></a>
+
+        </div>
+        <div class="buttons">
+          <button class="btn btn-success ml-4" type="submit" style="background: #139231">Обновить</button>
+          <button class="btn btn-danger ml-4" type="submit" style="background: #dc3545">Удалить</button> 
+        </div>  
       </div>
+            
       <hr><br>
-      <h4>Мои поездки:</h4>
+    
+      <h2>Мои поездки:</h2>
       <div class="card" style="width: 28rem;">
         <div class="card-header " style="display: flex">
           <h4>Бишкек > Нарын</h4>
@@ -67,21 +85,22 @@
         </div>
       </div>
       <div class="card" style="width: 28rem;">
-          <div class="card-header " style="display: flex">
-            <h4>Бишкек > Нарын</h4>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">1 Сентябрь 10:35</li>
-            <li class="list-group-item">Цена: 500 сом</li>
-            <li class="list-group-item">Свободнх мест: 3</li>
-          </ul>
-          <div style="display: flex; justify-content:space-between">
-            <a href="#" class="btn btn-success">Отправить запрос</a>
-            <a href="#" class="btn btn-secondary">Профиль водителя</a>
-          </div>
+        <div class="card-header " style="display: flex">
+          <h4>Бишкек > Нарын</h4>
         </div>
-        
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">1 Сентябрь 10:35</li>
+          <li class="list-group-item">Цена: 500 сом</li>
+          <li class="list-group-item">Свободнх мест: 3</li>
+        </ul>
+        <div style="display: flex; justify-content:space-between">
+          <a href="#" class="btn btn-success">Отправить запрос</a>
+          <a href="#" class="btn btn-secondary">Профиль водителя</a>
+        </div>
+      </div>
+      
     
+  
       
       
       
@@ -89,6 +108,9 @@
   </section>
    <!-- /.content-11 --> 
   
+
+
+   
   <section class="content-2">
     <img src="./img/01.svg" alt="">
   </section>
