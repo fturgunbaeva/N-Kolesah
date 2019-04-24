@@ -42,9 +42,11 @@ header {
 
 nav {
   height: 70px;
+  z-index: 2;
   background-color: #17a2b8;
   -webkit-box-shadow: 0 0 20px 4px;
           box-shadow: 0 0 20px 4px;
+          
 }
 
 .navbar-light .navbar-brand {
@@ -475,7 +477,7 @@ nav .nav-item:hover::after {
           flex-direction: column;
   background-color: #17a2b8;
   padding: 50px 0 0 0;
-  color: #white;
+  color: white;
   overflow: hidden;
 }
 
